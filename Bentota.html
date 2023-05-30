@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title> Tutle Hatcheries  </title>
+    <link rel="stylesheet" type="text/css" href="./Styles/defaultstyle.css" />
+</head>
+<body>
+    <!-- ======================== Navigation Bar ===========================-->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Turtle Hatchery
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        
+        <div class="nav-links">
+          <a href="./index.html" target="_blank">Home</a>
+          <a href="./Categories.html" target="_blank">Categories</a>
+          <a href="./Locations.html" target="_blank">Locations</a>
+          <a href="./Threats.html" target="_blank">Threats</a>
+          <a href="./Donate.html" target="_blank">Donate</a>
+         
+        </div>
+      </div>
+      <!-- ======================== N̶a̶v̶i̶g̶a̶t̶i̶o̶n̶ ̶B̶a̶r̶ ===========================-->
+      <!-- ======================== Tile container ===========================-->
+      <div class="TextSpace">
+        <h3>Bentota Hatchery</h3>
+        <p>
+          <h4>About</h4>
+          The Bentota Turtle Hatchery Project is a popular attraction in Bentota for all travellers. 
+          The pristine golden shores that draws you to our island, also provides an enticing nesting 
+          ground for several endangered turtle species from the Olive Ridley to the Leatherback turtle. 
+          The project aims at conserving and protecting the eggs from predators and other dangers. 
+          Visit the turtle hatchery in Bentota to learn about these endangered graceful creatures of the sea.
+
+          <h4>Conservation Efforts</h4>
+          The Turtle Care Centre at Kosgoda beach is one of 18 turtle hatcheries along the southern coast of 
+          Sri Lanka. The centre is located in the South Western coastal village of Kosgoda and was establised 
+          in 1981. It is also very popular as all five species of turtles that visit Sri Lanka nest in Kosgoda. 
+          This is not so with many of the other hatcheries around the island whose beaches host only some of 
+          the species.
+
+        </p>
+        <br>
+        <button onclick="visitPage();">Threats to Turtle</button>
+        <br>
+        <br>
+        <div class="SlideContainer">
+          <img class="mySlides" src="./Assets/bentota.jpg">
+          <img class="mySlides" src="./Assets/bentota2.jpg">
+          <img class="mySlides" src="./Assets/bentota3.jpg">
+          <img class="mySlides" src="./Assets/bentota4.jpg">
+        </div>
+        
+        <script>
+          var slideIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+
+          function visitPage(){
+            window.location='./Threats.html';
+          }
+        </script>
+
+
+
+        
+      </div>
+
+      <section>
+        <div class="footer1">
+          <p>FOLLOW US ON</p>
+          <div class="imgt">
+            <img src="./Assets/facebook.png" alt="">
+            <img src="./Assets/twitter.png" alt="">
+            <img src="./Assets/instagram.png" alt="">
+            <img src="./Assets/whatsapp.png" alt="">
+            <img src="./Assets/social.png" alt="">
+          </div>
+        </div>
+      </section>
+     
+
+
+</body>
+</html>
